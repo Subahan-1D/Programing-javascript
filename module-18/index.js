@@ -1,4 +1,14 @@
+// Reverse an array
+// const array = ['apple' , 'bannana', 'orange','malta','narikal']
+// for (let i = array.length -1 ; i >= 0 ; i--){
+//     console.log(array[i]);
+// }
 
-for (let i = 0 ; i < 5 ; i++ ){
-    console.log(i)
+
+// Reverse an array 
+
+
+const array = ['apple', 'comola','mango','orange','fruits']
+for(let i = array.length -1;  i>=0 ; i--){
+    console.log (array[i]);
 }
