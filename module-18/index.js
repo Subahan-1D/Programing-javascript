@@ -73,3 +73,22 @@ else{
     console.log("NOT FOUNDED")
 }
 */
+
+//Find max / min number 
+
+const num1 = [65,45,35,21,56,3,54,1]
+
+let maxNum = [0];
+let minNum = [0];
+
+for ( let i = 0 ; i < num1.length ; i++){
+    const currentNumber = num1[i];
+
+    if( maxNum < currentNumber){
+        maxNum = currentNumber;
+    }
+    if (minNum > currentNumber){
+        minNum =currentNumber;
+    }
+}
+console.log(minNum , maxNum);
