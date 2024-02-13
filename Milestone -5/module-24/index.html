@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Awesome Dom</title>
+    <link rel="stylesheet" href="./styles/style.css">
+
+    <style>
+        #fruits-title{
+            color: black;
+        }
+        #fruits-visit{
+            color: green;
+        }
+
+        .fruits-container li{
+            color: black;
+        }
+    </style>
+</head>
+<body>
+
+    <main id="main-container">
+        <h1>Welcome to Dom</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet consectetur labore, officia sequi nemo neque aliquid dolore dolorum similique magni sint dolores temporibus eaque doloremque possimus fugiat enim. Sunt, iure.</p>
+      <section>
+        <h1>My Awesome Dom jaliyet </h1>
+        <ul>
+            <li>jaliyet</li>
+            <li>shafayet</li>
+            <li>bonobash</li>
+            <li>My Awesome DOM </li>
+        </ul>
+      </section>
+     <section>
+        <h1 id="fruits-title">Fruits like you</h1>
+        <ul>
+            <li>Apple</li>
+            <li>Orange</li>
+            <li>Banana</li>
+            <li>Tomato</li>
+        </ul>
+     </section>
+     <section>
+        <h1 id="fruits-visit">fruits visit</h1>
+        <ul id="places-list">
+            <li class="visit">sundorbon</li>
+            <li class="visit">Dhaka</li>
+            <li class="visit">slyhet</li>
+            <li class="visitor">Thakurgaon</li>
+        </ul>
+     </section>
+
+     <section id="fruits-container">
+        <ul>
+            <li>Apple</li>
+            <li>Komola</li>
+            <li>Banana</li>
+            <li>Khejur</li>
+        </ul>
+     </section>
+    </main>
+   
+    <script src="./dom/style.js"></script>
+    <script src="./dom/dom.js"></script>
+    <script src="./dom/./append.js"></script>
+    <script>
+        const liColection = document.getElementsByTagName('li');
+        for(const li of liColection){
+           //console.log(li.innerText)
+        }
+        const allHeadings = document.getElementsByTagName('h1')
+        for (const h1 of allHeadings){
+            //console.log(h1.innerText);
+        }
+        const visits =document.getElementsByClassName('visit');
+        for(const visit of visits ){
+           // console.log(visit.innerText)
+        }
+        const visitors = document.getElementsByClassName('visitor')
+        
+          for(const visit of visitors){
+            //console.log(visit.innerText)
+          }
+        // query selector
+        const containers  = document.querySelectorAll('.fruits-container li')
+        //console.log(container);
+        for(const li of containers){
+        // console.log(li.innerText);
+        }
+  
+
+    </script>
+</body>
+</html>
